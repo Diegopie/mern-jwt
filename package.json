@@ -1,0 +1,32 @@
+{
+  "name": "noobtodo",
+  "version": "1.0.0",
+  "description": "learning to create user auth with JWT https://www.youtube.com/watch?v=H15hpteBdL8&list=PLvTjg4siRgU0HS3cANo7KZ52Wkud083TL&ab_channel=NoobCoder",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:client": "cd client && npm start",
+    "watch:server": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diegopie/mern-jwt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diegopie/mern-jwt/issues"
+  },
+  "homepage": "https://github.com/Diegopie/mern-jwt#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
