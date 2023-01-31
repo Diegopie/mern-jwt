@@ -12,6 +12,20 @@ mongoose.connect('mongodb://localhost/mernAuthJwt', { useNewUrlParser: true }, (
     console.log('Connected to DB!');
 });
 
+// Server side test of documents
+const User = require('./models/User');
+const newUser = {
+    username: 'Dogpie',
+    password: '1234',
+    role: 'admin'
+};
+const user = new User(newUser);
+
+user.save((err, document) => {
+    if (err)  console.log(err)
+    console.log(document);
+})
+
 app.listen(5000, ()=> {
     console.log('Express Server Running');
 });
